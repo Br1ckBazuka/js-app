@@ -1,0 +1,92 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body {
+   padding: 100px;
+   background: #333;
+}
+.wrapper {
+   max-width: 1170px;
+   height: 100%;
+   margin: 0px auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+button {
+   cursor: pointer;
+   outline: none;
+}
+
+
+.buttons {
+   display: flex;
+   flex-direction: column;
+}
+
+.buttons button {
+   position: relative;
+   color: #fff;
+   background: #f0f;
+   padding: 15px;
+   margin: 0px 0px 20px 20px;
+   display: inline-block;
+   text-align: center;
+   border-radius: 10px;
+   transition: all 0.3s ease 0s;
+}
+.buttons button:hover {
+   box-shadow: 0 0 20px 1px #f0f;
+}
+.buttons button:active {
+   top: 1px;
+}
+
+.content {
+   padding: 50px;
+   max-width: 500px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.4;
+   border-radius: 10px;
+}
+
+.color1 {
+   background-color: red;
+   color: #fff;
+}
+.color2 {
+   background-color: white;
+   color: #000;
+}
+.color3 {
+   background-color: pink;
+   color: #672f1e;
+}
+.color4 {
+   background-color: lightblue;
+   color: blue;
+}
+.color5 {
+   background-color: #711e1e;
+   color: #788578;
+}
+.color6 {
+   background-color: #43b581;
+   color: #f400a1;
+}
