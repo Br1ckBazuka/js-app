@@ -26,25 +26,26 @@ let textArray = [
 Array.prototype.randomColor = function () {
    return this[Math.floor(Math.random() * this.length)]
 };
-let myRandomColor = colorArray.randomColor();
-
 // Случайный текст
 Array.prototype.randomText = function () {
    return this[Math.floor(Math.random() * this.length)]
 };
-let myRandomText = textArray.randomText();
 
 // Генерировать текст
-generate.addEventListener('click', function () {
+   generate.addEventListener('click', function () {
+   let myRandomColor = colorArray.randomColor();
+   let myRandomText = textArray.randomText();
+
+   bgcolor.classList.remove("color1", "color2", "color3", "color4", "color5", "color6");
    bgcolor.classList.add(myRandomColor);
 
    text.innerHTML = myRandomText;
    bgcolor.insertAdjacentElement('afterbegin', text);
 
-   text.style.display = 'block';
 });
 
-// Очистить текст
-clear.addEventListener('click', function () {
-   window.location.reload(true);
+// Очистить текст и классы
+   clear.addEventListener('click', function () {
+   bgcolor.classList.remove("color1", "color2", "color3", "color4", "color5", "color6");
+   text.innerHTML = '';
 })
